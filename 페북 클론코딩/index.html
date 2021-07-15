@@ -11,6 +11,93 @@
 </head>
 <body>
     <div class="container">
+        <div class="post-modal-wrapper" id="post-modal-wrapper">
+            <div class="modal-header_left">
+                <a href="">
+                    <img src="./assets/페북 아이콘.png" alt="">
+                </a>
+                <div class="search">
+                    <img src="./assets/페북 검색 아이콘.png" alt="">
+                    <input type="text" placeholder="Facebook 검색" >
+                </div>
+            </div>
+            <div class="modal-header-right">
+                <div class="head-profile">
+                    <img src="./assets/프로필 사진.png" alt="">
+                    <p>사용자</p>
+                </div>
+                <div class="head-buttons">
+                    <div id="menu">
+                        <img src="./assets/메뉴 아이콘.png" alt="">
+                    </div>
+                    <div id="messenger">
+                        <img src="./assets/메신저 아이콘.png" alt="">
+                    </div>
+                    <div id="alarm">
+                        <img src="./assets/알림 아이콘.png" alt="">
+                    </div>
+                    <div id="account">
+                        <img src="./assets/계정 아이콘.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="post-modal">
+                <div class="post-modal-header">
+                    <p>게시물 만들기</p>
+                    <div id="xbutton" onclick="ModalOff()">
+                        <img src="./assets/x .png" alt="">
+                    </div>
+                </div>
+                <div class="post-modal-body">
+                    <div class="post-modal-body-head">
+                        <img src="./assets/왼프로필.png" alt="" class="post-modal-body-head-left">
+                        <div class="post-modal-body-head-right">
+                            <p>사용자</p>
+                            <div id="Full-disclosure">
+                                <img id="first-img" src="./assets/지구본.png" alt="">
+                                <p>전체 공개</p>
+                                <img id="second-img" src="./assets/전체공개 화살표.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-modal-body-body-top">
+                        <input id="title" type="text" placeholder="제목을 입력해주세요.">
+                    </div>
+                    <div class="post-modal-body-body">
+                        <textarea  name="" id="info" cols="30" rows="10" placeholder="사용자님, 무슨 생각을 하고 계신가요?"></textarea>
+                    </div>
+                    <div class="post-modal-body-footer">
+                        <img src="./assets/AA.png" alt="">
+                    </div>
+                </div>
+                <div class="post-modal-footer">
+                    <div class="post-modal-footer-head">
+                        <p>게시물에 추가</p>
+                        <div class="post-modal-footer-head-buttons">
+                            <div>
+                                <img src="./assets/게시사진.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/게시친구.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/게시기분.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/게시위치.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/게시질문.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/게시더보기.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="dopost">게시</button>
+                </div>
+            </div>
+        </div>
         <div class="header">
             <div class="header_left">
                 <a href="">
@@ -113,11 +200,48 @@
                 <p id="notice">개인정보처리방침  · 약관  · 광고  · AdChoices@ · 쿠키  · 더보기 · Facebook © 2021</p>
             </div>
             <div class="body-mid">
+                <div class="body-mid-wrapper">
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="./assets/왼프로필.png" alt="">
+                            <button onclick="ModalOn()">사용자님, 무슨 생각을 하고 계신가요?</button>
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-buttons">
+                                <img src="./assets/사진.png" alt="">
+                                <p>사진/동영상</p>
+                            </div>
+                            <div class="post-buttons">
+                                <img src="./assets/친구 태그.png" alt="">
+                                <p>친구 태그하기</p>
+                            </div>
+                            <div class="post-buttons">
+                                <img src="./assets/기분.png" alt="">
+                                <p>기분/활동</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postings">
+                        <div class="posting-header">
+                            <div class="posting-header-left">
+                                <img src="./assets/왼프로필.png" alt="">
+                                <div class="posting-header-left-text">
+                                    <p>사용자</p>
+                                    <div id="posting-date">날짜</div>
+                                </div>
+                            </div>
+                            <div class="posting-header-right">
+                                <img src="./assets/게시글더보기.png" alt="">
+                            </div>
+                        </div>
+                        <div class="posting-body">
+                            <p>나락</p>
+                        </div>
+                        <div class="posting-footer">
 
-
-
-
-
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="body-right">
                 <div class="body-right-header">
@@ -158,5 +282,6 @@
             </div>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
