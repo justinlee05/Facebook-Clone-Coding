@@ -445,7 +445,7 @@
 
 .body-mid{
     background-color:#18191A;
-    z-index: 0.3;
+
     left: 23%;
     right: 23%;
     width: 54%;
@@ -811,11 +811,14 @@
 }
 
 .postings{
-    border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-top: 20px;
-    height: 100px;
+    background-color: #242526;
 
+}
+
+#posting-date{
+    color: #B0B3B8;
 }
 
 .posting-header{
@@ -823,7 +826,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid white;
     padding: 8px;
     padding-left: 10px;
     padding-bottom: 0px;
@@ -854,18 +856,178 @@
     width: 45px;
 }
 
-.posting-header-right img{
-    width: 30px;
-    border: 1px solid white;
+.posting-header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50px;
     margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.posting-header-right:hover{
+    transition: 0s;
+    background-color: #3A3B3C;
+}
+
+
+.posting-header-right img{
+    width: 25px;
+    
 }
 
 .posting-body{
-    border: 1px solid white;
-    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 0px;
     font-size: 25px;
+    color: white;
 }
+
+.posting-body p{
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+
+}
+
+.posting-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.posting-footer-top{
+    border-top: 1px solid #3E4042;
+    border-bottom: 1px solid #3E4042;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.posting-footer-top div{
+
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 79%;
+    color: #B0B3B8;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.posting-footer-top div:hover{
+    background-color: #3A3B3C;
+    transition: 0s;
+}
+
+.posting-footer-top div p {
+    padding-left: 6px;
+    padding-bottom: 3px;
+    
+}
+
+.posting-footer-bottom{
+
+    height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+}
+
+.posting-footer-bottom{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.posting-footer-bottom img{
+    width: 35px;
+}
+
+.comment{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 4px;
+    color: #B0B3B8;
+    border-radius: 50px;
+    background-color: #3A3B3C;
+    padding-left: 10px;
+}
+
+.comment-imgs{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 140px;
+    justify-content: space-between;
+    padding-right: 8px;
+}
+
+#img1{
+padding-right: 1px;
+}
+#img2{
+padding-right: 1px;
+padding-bottom: 1px;
+}
+#img3{
+
+}
+#img4{
+padding-left: 1px;
+padding-bottom: 1px;
+
+}
+
+.comment-imgs div{
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.3s;
+
+}
+
+.comment-imgs div:hover{
+    background-color: #4E4F50;
+    transition: 0s;
+}
+
+.comment-imgs img{
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
