@@ -94,10 +94,100 @@
                             </div>
                         </div>
                     </div>
-                    <button id="dopost">게시</button>
+                    <button id="dopost" onclick="ConfigPost()">게시</button>
                 </div>
             </div>
         </div>
+
+        <div class="edit-modal-wrapper" id="edit-modal-wrapper">
+            <div class="modal-header_left">
+                <a href="">
+                    <img src="./assets/페북 아이콘.png" alt="">
+                </a>
+                <div class="search">
+                    <img src="./assets/페북 검색 아이콘.png" alt="">
+                    <input type="text" placeholder="Facebook 검색" >
+                </div>
+            </div>
+            <div class="modal-header-right">
+                <div class="head-profile">
+                    <img src="./assets/프로필 사진.png" alt="">
+                    <p>사용자</p>
+                </div>
+                <div class="head-buttons">
+                    <div id="menu">
+                        <img src="./assets/메뉴 아이콘.png" alt="">
+                    </div>
+                    <div id="messenger">
+                        <img src="./assets/메신저 아이콘.png" alt="">
+                    </div>
+                    <div id="alarm">
+                        <img src="./assets/알림 아이콘.png" alt="">
+                    </div>
+                    <div id="account">
+                        <img src="./assets/계정 아이콘.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="post-modal">
+                <div class="post-modal-header">
+                    <p id="edit-top">수정하기</p>
+                    <div id="xbutton" onclick="EditOff()">
+                        <img src="./assets/x .png" alt="">
+                    </div>
+                </div>
+                <div class="post-modal-body">
+                    <div class="post-modal-body-head">
+                        <img src="./assets/왼프로필.png" alt="" class="post-modal-body-head-left">
+                        <div class="post-modal-body-head-right">
+                            <p>사용자</p>
+                            <div id="Full-disclosure">
+                                <img id="first-img" src="./assets/지구본.png" alt="">
+                                <p>전체 공개</p>
+                                <img id="second-img" src="./assets/전체공개 화살표.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-modal-body-body-top">
+                        <input id="edit-title" type="text" placeholder="제목을 입력해주세요.">
+                    </div>
+                    <div class="post-modal-body-body">
+                        <textarea  name="" id="edit-info" cols="30" rows="10" placeholder="사용자님, 무슨 생각을 하고 계신가요?"></textarea>
+                    </div>
+                    <div class="post-modal-body-footer">
+                        <img src="./assets/AA.png" alt="">
+                    </div>
+                </div>
+                <div class="post-modal-footer">
+                    <div class="post-modal-footer-head">
+                        <p>게시물에 추가</p>
+                        <div class="post-modal-footer-head-buttons">
+                            <div>
+                                <img src="./assets/게시사진.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/게시친구.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/게시기분.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/게시위치.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/게시질문.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/게시더보기.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="doedit" onclick="ConfigEdit()">게시</button>
+                </div>
+            </div>
+        </div>
+
+        
         <div class="header">
             <div class="header_left">
                 <a href="">
@@ -221,54 +311,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="postings">
-                        <div class="posting-header">
-                            <div class="posting-header-left">
-                                <img src="./assets/왼프로필.png" alt="">
-                                <div class="posting-header-left-text">
-                                    <p>사용자</p>
-                                    <div id="posting-date">날짜</div>
-                                </div>
-                            </div>
-                            <div class="posting-header-right">
-                                <img src="./assets/게시글더보기.png" alt="">
-                            </div>
-                        </div>
-                        <div class="posting-body">
-                            <p>이제 API 연동만 남았는데</p>
-                        </div>
-                        <div class="posting-footer">
-                            <div class="posting-footer-top">
-                                <div class="posting-footer-top-left">
-                                    <img src="./assets/좋아요.png" alt="">
-                                    <p>좋아요</p>
-                                </div>
-                                <div class="posting-footer-top-right">
-                                    <img src="./assets/댓글 달기.png" alt="">
-                                    <p>댓글 달기</p>
-                                </div>
-                            </div>
-                            <div class="posting-footer-bottom">
-                                <img src="./assets/왼프로필.png" alt="">
-                                <div class="comment">
-                                    <p>댓글을 입력하세요...</p>
-                                    <div class="comment-imgs">
-                                        <div>
-                                            <img id="img1" src="assets/이모티콘 추가.png" alt="">
-                                        </div>
-                                        <div>
-                                            <img id="img2" src="./assets/사진 첨부.png" alt="">
-                                        </div>
-                                        <div>
-                                            <img id="img3" src="./assets/GIF.png" alt="">
-                                        </div>
-                                        <div>
-                                            <img id="img4" src="./assets/스티커.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id = 'post-point'>
+                    </div>
+                    <div id="last"> 
                     </div>
                 </div>
             </div>
